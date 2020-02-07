@@ -56,9 +56,11 @@ public class Bird : MonoBehaviour
 
     private void OnGUI()
     {
+        var displayText = "Score: " + score
+            + "\nPause - P";
         GUI.skin.label.fontSize = 50;
         GUI.contentColor = Color.black;
-        GUI.Label(new Rect(0f, 0f, 200f, 200f), "Score: " + score);
+        GUI.Label(new Rect(0f, 0f, 250f, 250f), displayText);
     }
 
     void Jump()
